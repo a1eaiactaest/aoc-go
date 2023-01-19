@@ -19,11 +19,9 @@ func part1(lines []string) int {
 	return max_cals
 }
 
-/*
 func part2(lines []string) int {
   return lines
 }
-*/
 
 func main() {
 	lines := file_to_lines("input.txt")

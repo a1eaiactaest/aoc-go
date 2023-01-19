@@ -14,7 +14,6 @@ func check(e error) {
   }
 }
 
-
 /* *** FILES *** */
 
 func file_to_lines(path string) (lines []string) {
