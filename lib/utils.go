@@ -1,11 +1,9 @@
-package main
+package lib
 
 import (
-  "fmt"
-  "os"
-  "bufio"
-  "ioutil"
-  "strconv"
+	"bufio"
+	"io/ioutil"
+	"os"
 )
 
 func check(e error) {
@@ -48,12 +46,21 @@ func file_to_bytes(fn string) []byte {
   check(err)
   return bytes
 }
+/* *** ARRAYS *** */
 
-/* *** STRINGS *** */
-
-func atoi(s string) int {
-  i, err := strnconv.Atoi(s)
-  check(err)
-  return i
+func minmax(arr []int) (int, int) {
+  // set first element
+  var max int = arr[0]
+  var min int = arr[0]
+  
+  // skip first element
+  for _, val := range arr[1:] {
+    if val > max {
+      max = val
+    }
+    if val < min {
+      min = val
+    }
+  }
+  return min, max
 }
-
