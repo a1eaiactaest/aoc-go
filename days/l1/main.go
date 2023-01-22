@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/a1eaiactaest/aoc-go/cast"
+	"github.com/a1eaiactaest/aoc-go/files"
+)
 
 func part1(lines []string) int {
   cals := 0
@@ -13,18 +18,14 @@ func part1(lines []string) int {
       }
       cals = 0
     } else { // acc
-      cals += atoi(line)
+      cals += cast.ToInt(line)
     }
 	} 
 	return max_cals
 }
 
-func part2(lines []string) int {
-  return lines
-}
-
 func main() {
-	lines := file_to_lines("input.txt")
+	lines := files.FileToLines("input.txt")
 	p1 := part1(lines)
 	fmt.Println(p1)
 }
