@@ -2,7 +2,6 @@ package algo
 
 import "strings"
 
-
 func PermuteIntSlice(numbers []int) [][]int {
 	return recurseIntSlice(numbers, 0)
 }
@@ -55,6 +54,6 @@ func recurseStringSlice(in []string, startIndex int) [][]string {
 		in[startIndex], in[i] = in[i], in[startIndex]
 		perms = append(perms, recurseStringSlice(in, startIndex+1)...)
 		in[startIndex], in[i] = in[i], in[startIndex]
-
 	}
+	return perms
 }
