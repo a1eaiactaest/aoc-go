@@ -31,7 +31,7 @@ func part2(lines []string) int {
 	Idea:
 		* accumulate elf's cals
 		* sort
-		* pick first three
+		* pick last three
 	*/
 
 	cals := []int{}
