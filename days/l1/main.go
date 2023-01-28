@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/a1eaiactaest/aoc-go/cast"
-	"github.com/a1eaiactaest/aoc-go/files"
-	"github.com/a1eaiactaest/aoc-go/maths"
+	"github.com/a1eaiactaest/gocomp/cast"
+	"github.com/a1eaiactaest/gocomp/files"
+	"github.com/a1eaiactaest/gocomp/maths"
 )
 
 func part1(lines []string) int {
